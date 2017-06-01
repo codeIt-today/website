@@ -4,16 +4,16 @@
     <div class="window">
       <div class="titlebar">
         <div class="buttons">
-          <div class="close" />
-          <div class="minimize" />
-          <div class="zoom" />
+          <span class="close"></span>
+          <span class="minimize"></span>
+          <span class="zoom"></span>
         </div>
       </div>
       <div class="content">
         <div class="slogan">
-          <span id="prefix"/>
-          <span id="subject" :class="{ 'subject-underline': showSubject }" />
-          <span id="postfix"/>
+          <span id="prefix"></span>
+          <span id="subject" :class="{ 'subject-underline': showSubject }"></span>
+          <span id="postfix"></span>
         </div>
       </div>
     </div>
@@ -24,12 +24,12 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro')
 
 .slogan
-  font-size: 38pt
-  font-weight: 300
+  font-size: 60px
+  font-weight: 400
   font-family: 'Anonymous Pro', monospace
 
 .subject-underline
-  border-bottom: 4px solid #444
+  border-bottom: 3px solid #444
 
 #subject
   padding: 0 15px
@@ -46,7 +46,7 @@
 .is-typing::after
   content: '|'
   animation: blink 700ms infinite
-  font-weight: 300
+  font-weight: 100
   position: absolute
   margin-left: -15px
 
@@ -103,7 +103,7 @@
   display: inline-block
 
 .content
-  padding: 10px
+  padding: 10px 20px
   word-wrap: break-word
   line-height: 1.2
 </style>
@@ -136,7 +136,7 @@ export default {
       'React',
       'Vue',
       'Angular',
-      'Everything you need'
+      'Everything'
     ]
     let sIndex = 0 // index of subjects array, must be zero
     let isStartLooping = false
