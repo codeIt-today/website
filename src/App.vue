@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <header class="header">
-      <nav class="inner">
-        <router-link to="/" exact>首頁</router-link>
-        <router-link to="/courses">課程</router-link>
-        <router-link to="/course/vue-in-action">Test course</router-link>
-      </nav>
+      <navbar></navbar>
     </header>
     <transition name="fade" mode="out-in">
       <router-view class="view"></router-view>
@@ -28,3 +24,13 @@ body
   opacity 0
 
 </style>
+
+<script>
+import navbar from './components/Navbar.vue'
+
+export default {
+  components: {
+    navbar
+  }
+}
+</script>
