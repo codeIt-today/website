@@ -6,11 +6,11 @@
   </nav>
 </template>
 
-<style lang="stylus">
-</style>
-
 <script>
 export default {
   name: 'navbar'
 }
 </script>
+
+<style lang="stylus">
+</style>

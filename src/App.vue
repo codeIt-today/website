@@ -16,6 +16,7 @@ body
   font-family -apple-system, BlinkMacSystemFont, Roboto, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   font-size 15px
   margin 0
+  overflow-y: scroll
 
 .fade-enter-active, .fade-leave-active
   transition all .1s ease
